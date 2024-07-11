@@ -41,7 +41,7 @@ const createActivityItem = (activity) => {
     const datePtBr = formatDate(activity.date);
 
     return `
-        <div>
+        <div class="card-bg">
             ${input}
             <span>${activity.name}</span>
             <time>

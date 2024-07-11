@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planeje sua viagem!</title>
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/locale/pr-br.js"></script>
+    <script>dayjs.locale('pt-br')</script>
+</head>
+<body>
+    <form onsubmit="saveActivity(event)">
+        <div>
+            <input type="text" placeholder="Qual a atividade?" name="activity-input" required>
+        </div>
+        <div>
+            <select name="day-select">
+                <option value="2024-03-04">01 de Fevereiro</option>
+            </select>
+        </div>
+        <div>
+            <select name="hour-select">
+                <option value="10:30">10:30</option>
+            </select>
+        </div>
+        <button>Salvar atividade</button>
+    </form>
+    <main>
+        <h1>Atividades</h1>
+        <section id="activity-container">
+        </section>
+        <script src="./src/script.js"></script>
+    </main>
+</body>
+</html>
